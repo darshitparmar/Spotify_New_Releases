@@ -1,2 +1,2 @@
 # Spotify_Data_Pipeline
-This is an end-to-end pipeline which will fetch raw data using the spotify api load into an S3 Bucket, tranform it using a Jupyter notebook and load ingest into a Postgre database
+This is an end-to-end pipeline which will fetch data using the spotify api and aws lambda daily scheduled using an Event Trigger and store it as a csv in AWS S3 Bucket. This data will then be transformed using a Jupyter Notebook and sent to a postgre database staging table. The staging tables have defined Functions and Triggers that are activated once the data is inserted and will be inserted into their respective tables based on snowflake design.
