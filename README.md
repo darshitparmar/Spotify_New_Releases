@@ -1,5 +1,5 @@
 # Spotify_New_Releases
-The Spotify New Releases data pipeline will fetch all new albums released and store it in an **S3 Bucket** as CSV file, then push it downstream to **Postgres Database**. It is automated using **AWS Lambda**, **Event Triggers**, **PySpark**, and **PLSQL Functions and Triggers** to run **daily**.
+The Spotify New Releases data pipeline will fetch all new albums released and store them in an **S3 Bucket** as a CSV file, then push it downstream to **Postgres Database**. It is automated to run daily using **AWS Lambda**, **Event Triggers**, **PySpark**, and **PLSQL Functions and Triggers**.
 
 ## Pipeline Design
 ![Spotify Data Pipeline](https://github.com/user-attachments/assets/b4ed2571-e162-41ce-816f-a06614257084)
